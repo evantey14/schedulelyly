@@ -23,7 +23,8 @@ def create_reservation
   exam.reservations.create(
     client_first_name: FIRST_NAMES.sample,
     client_last_name: LAST_NAMES.sample,
-    datetime:rand(PAST_EXAM_DATES)
+    datetime:rand(PAST_EXAM_DATES),
+    exam_score:rand(1..100)
   )
 end
 
