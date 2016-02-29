@@ -1,0 +1,12 @@
+<h1>Make A Reseration</h1>
+<%= form_for :reservation, url: reservations_path do |res|%>
+  <%= res.label :client_first_name %>
+  <%= res.text_field :client_first_name %><br>
+  <%= res.label :client_last_name %>
+  <%= res.text_field :client_last_name %><br>
+  <%= res.label :exam_id %>
+  <%= res.number_field :exam_id %><br>
+  <%= res.label :datetime %>
+  <%= res.number_field :datetime, :value => 0%><br>
+  <%= res.submit %>
+<% end %>
